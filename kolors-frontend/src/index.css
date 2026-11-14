@@ -1,9 +1,34 @@
 :root {
-  --fondo: #F5EEFC;
-  --texto: #1F1B5C;
-  --lila: #B497EF;
+  --fondo: #EEF6FF;
+  --texto: #1B2B5C;
+  --lila: #9CC7F5;
   --verde: #14D1A3;
-  --morado: #5B0FE0;
+  --morado: #2C6BC9;
+  --coral: #F5476B;
+  --menta: #B5E8E0;
+  --amarillo: #FFDD55;
+  --gris: #7F8DA8;
+  --borde: #D6E6F8;
+
+  --sombra-rgb: 44, 107, 201;
+  --oscuro: #123C7E;
+  --domo: #CFE4FA;
+  --rosa: #FFD6E3;
+  --suelo: #DDFEFF;
+  --sol-halo: #FFF3A8;
+  --resumen-fondo: #E3F0FE;
+  --asiento-borde: #A9CBEF;
+  --bus-borde: #C5DDF5;
+  --punteada: #BCD6F0;
+  --linea: #B8D3EE;
+  --ocupado: #D3DCE8;
+  --ocupado-texto: #9AA7BC;
+  --volante: #B3BFD1;
+  --wc: #DDE6F2;
+  --aviso-fondo: #FFF4C9;
+  --aviso-texto: #8A6D00;
+  --texto-amarillo: #6B5200;
+  --texto-menta: #0F5F55;
 }
 
 body {
@@ -104,7 +129,7 @@ body {
   border-radius: 999px;
   max-width: 1000px;
   margin: 0 auto;
-  box-shadow: 0 10px 30px rgba(91, 15, 224, 0.2);
+  box-shadow: 0 10px 30px rgba(var(--sombra-rgb), 0.2);
 }
 
 .buscador-campos {
@@ -157,7 +182,7 @@ body {
   left: 40px;
   width: 90px;
   height: 170px;
-  background: #FFDD55;
+  background: var(--amarillo);
   border-radius: 45px 45px 0 0;
 }
 
@@ -165,7 +190,7 @@ body {
   left: 150px;
   width: 70px;
   height: 200px;
-  background: #B5E8E0;
+  background: var(--menta);
 }
 
 .triangulo {
@@ -174,7 +199,7 @@ body {
   height: 0;
   border-left: 45px solid transparent;
   border-right: 45px solid transparent;
-  border-bottom: 110px solid #F5476B;
+  border-bottom: 110px solid var(--coral);
 }
 
 .bus {
@@ -195,7 +220,7 @@ body {
 .rueda {
   width: 30px;
   height: 30px;
-  background: #2B0A8A;
+  background: var(--oscuro);
   border: 4px solid white;
   border-radius: 50%;
 }
@@ -212,21 +237,21 @@ body {
   left: 620px;
   width: 60px;
   height: 130px;
-  background: #F5476B;
+  background: var(--coral);
 }
 
 .rosa {
   left: 700px;
   width: 90px;
   height: 150px;
-  background: #F0CBFA;
+  background: var(--rosa);
 }
 
 .domo {
   left: 810px;
   width: 140px;
   height: 140px;
-  background: #E3D8F8;
+  background: var(--domo);
   border-radius: 70px 70px 0 0;
 }
 
@@ -234,7 +259,7 @@ body {
   left: 970px;
   width: 70px;
   height: 180px;
-  background: #FFDD55;
+  background: var(--amarillo);
 }
 
 .sol {
@@ -243,22 +268,14 @@ body {
   bottom: auto;
   width: 64px;
   height: 64px;
-  background: #FFDD55;
+  background: var(--amarillo);
   border-radius: 50%;
-  box-shadow: 0 0 0 8px #FFF3A8;
+  box-shadow: 0 0 0 8px var(--sol-halo);
 }
 
 .suelo {
-  background: #DDFEFF;
+  background: var(--suelo);
   height: 140px;
-}
-
-:root {
-  --coral: #F5476B;
-  --menta: #B5E8E0;
-  --amarillo: #FFDD55;
-  --gris: #8A85A8;
-  --borde: #E6DDF5;
 }
 
 .logo {
@@ -357,7 +374,7 @@ body {
   margin: 28px auto 0;
   padding: 8px 8px 8px 12px;
   border-radius: 999px;
-  box-shadow: 0 8px 24px rgba(91, 15, 224, 0.18);
+  box-shadow: 0 8px 24px rgba(var(--sombra-rgb), 0.18);
 }
 
 .mini-campo {
@@ -469,7 +486,7 @@ body {
   background: white;
   border-radius: 16px;
   padding: 20px;
-  box-shadow: 0 4px 16px rgba(91, 15, 224, 0.06);
+  box-shadow: 0 4px 16px rgba(var(--sombra-rgb), 0.06);
 }
 
 .filtros-titulo {
@@ -565,7 +582,7 @@ body {
   background: white;
   border-radius: 16px;
   margin-bottom: 14px;
-  box-shadow: 0 4px 16px rgba(91, 15, 224, 0.06);
+  box-shadow: 0 4px 16px rgba(var(--sombra-rgb), 0.06);
   overflow: hidden;
 }
 
@@ -585,12 +602,12 @@ body {
 
 .etiqueta.local {
   background: var(--menta);
-  color: #0F5F55;
+  color: var(--texto-menta);
 }
 
 .etiqueta.depaso {
   background: var(--amarillo);
-  color: #6B5200;
+  color: var(--texto-amarillo);
 }
 
 .pocos {
@@ -630,7 +647,7 @@ body {
 .linea-ruta {
   flex: 1;
   height: 1px;
-  background: #CFC7E6;
+  background: var(--linea);
 }
 
 .punto-ruta {
@@ -744,7 +761,7 @@ input {
   display: flex;
   align-items: center;
   gap: 10px;
-  background: #FFF4C9;
+  background: var(--aviso-fondo);
   padding: 10px 16px;
   border-radius: 12px;
 }
@@ -752,7 +769,7 @@ input {
 .chip-tiempo small {
   display: block;
   font-size: 10px;
-  color: #8A6D00;
+  color: var(--aviso-texto);
 }
 
 .chip-tiempo b {
@@ -768,7 +785,7 @@ input {
   background: white;
   border-radius: 16px;
   padding: 24px 24px 30px;
-  box-shadow: 0 4px 16px rgba(91, 15, 224, 0.06);
+  box-shadow: 0 4px 16px rgba(var(--sombra-rgb), 0.06);
 }
 
 .col-resumen {
@@ -778,7 +795,7 @@ input {
   background: white;
   border-radius: 16px;
   padding: 24px;
-  box-shadow: 0 4px 16px rgba(91, 15, 224, 0.06);
+  box-shadow: 0 4px 16px rgba(var(--sombra-rgb), 0.06);
 }
 
 .col-resumen h3 {
@@ -810,7 +827,7 @@ input {
 }
 
 .cuadro.libre {
-  border: 1.5px solid #C9BDEB;
+  border: 1.5px solid var(--asiento-borde);
   background: white;
 }
 
@@ -819,12 +836,12 @@ input {
 }
 
 .cuadro.ocu {
-  background: #D9D6E3;
+  background: var(--ocupado);
 }
 
 .aviso-expiro {
-  background: #FFF4C9;
-  color: #6B5200;
+  background: var(--aviso-fondo);
+  color: var(--texto-amarillo);
   border-radius: 12px;
   padding: 12px 16px;
   margin-bottom: 16px;
@@ -849,7 +866,7 @@ input {
   width: 300px;
   box-sizing: border-box;
   margin: 0 auto;
-  border: 2px solid #DDD3F3;
+  border: 2px solid var(--bus-borde);
   border-radius: 80px 80px 28px 28px;
   padding: 24px 36px 20px;
 }
@@ -866,17 +883,17 @@ input {
 .volante {
   width: 30px;
   height: 30px;
-  border: 3px solid #BDB7CC;
+  border: 3px solid var(--volante);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #BDB7CC;
+  color: var(--volante);
   font-size: 12px;
 }
 
 .linea-punteada {
-  border-top: 1px dashed #D5CCEA;
+  border-top: 1px dashed var(--punteada);
   margin: 0 0 22px;
 }
 
@@ -900,7 +917,7 @@ input {
   width: 34px;
   height: 34px;
   border-radius: 8px;
-  border: 1.5px solid #C9BDEB;
+  border: 1.5px solid var(--asiento-borde);
   background: white;
   color: var(--texto);
   font-weight: 800;
@@ -915,7 +932,7 @@ input {
   left: 5px;
   right: 5px;
   height: 5px;
-  border: 1.5px solid #C9BDEB;
+  border: 1.5px solid var(--asiento-borde);
   border-bottom: 0;
   border-radius: 5px 5px 0 0;
   background: white;
@@ -926,15 +943,15 @@ input {
 }
 
 .asiento.ocupado {
-  background: #D9D6E3;
-  border-color: #D9D6E3;
-  color: #A7A2BA;
+  background: var(--ocupado);
+  border-color: var(--ocupado);
+  color: var(--ocupado-texto);
   cursor: not-allowed;
 }
 
 .asiento.ocupado::before {
-  background: #D9D6E3;
-  border-color: #D9D6E3;
+  background: var(--ocupado);
+  border-color: var(--ocupado);
 }
 
 .asiento.sel {
@@ -958,13 +975,13 @@ input {
 }
 
 .wc {
-  background: #E4E0EE;
+  background: var(--wc);
   border-radius: 6px;
   padding: 5px 8px;
 }
 
 .resumen-viaje {
-  background: #F3EBFD;
+  background: var(--resumen-fondo);
   border-radius: 12px;
   padding: 14px;
   margin-bottom: 16px;
